@@ -1,0 +1,230 @@
+:root{
+    --primaryColor:rgba(234,56,101,255);
+    /* --secondaryColor:#fdcbe2; */
+    /* --secondaryColor:#f96099; */
+    /* --secondaryColor:#fa77a7; */
+    /* --secondaryColor:#fb8eb6; */
+    /* --secondaryColor:#fba4c5; */
+    --secondaryColor:#fcbbd3;
+    --lightColor:#f3dec9;
+    --bgColor:#e9ece1;
+    --pale:rgba(204,189,160,255);
+    --peachcolor:#efc477;
+    
+}
+
+
+/* home  */
+.home{
+    position: relative;
+    /* top: 90px; */
+    width: 100vw;
+    height: 120vh;
+    background-image: url(/assets/images/home1.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.home-content{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+.head{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow: 2px 2px 8px black;
+}
+.subtext{
+    font-size: 1.5rem;
+    color: var(--secondaryColor);
+    text-shadow: 2px 2px 8px black;
+}
+
+/* event */
+
+.eventlist{
+   
+    width: 20vw;
+    display: none;
+    position:fixed;
+    z-index: 11;
+    top: 15%;
+    left: 55%;
+    background-color:#efc57780;
+    color: var(--bgColor);
+    border-radius: 10px;
+   
+}
+.event{
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    
+}
+.event:not(:nth-child(3)){
+    border-block-end: 2px solid rgb(255, 255, 255);
+}
+.event:hover{
+    background-color: var(--primaryColor);
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgb(68, 63, 63);
+}
+
+/* about  */
+.about{
+    overflow: hidden;
+    margin: 10px 0;
+}
+.about-body{
+    display: flex;
+    gap: 30px;
+    margin: 20px;
+}
+.about-head{
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 2rem;
+    color: var(--primaryColor);
+    background-color: var(--bgColor);
+}
+.about-content{
+   width: 50vw;
+}
+.slide-content{
+    text-align: center;
+    width: 50vw;
+    height: 400px;
+    background-color: var(--secondaryColor);
+    justify-content: center;
+    padding:30px;
+   
+}
+
+.dots{
+    width: 100%;
+    text-align: center;
+   
+}
+.dot{
+    width: 15px;
+    height: 15px;
+    border:1px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: var(--bgColor);
+    transition: background-color 0.6s ease;
+}
+.active{
+    background-color: var(--primaryColor);
+}
+.about-exp{
+    background-color:var(--bgColor);
+    width:100vw;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.about-list{
+    width:20%;
+    background-color:var(--secondaryColor);
+    text-align: center;
+    padding: 20px;
+    border: 2px dashed var(--peachcolor);
+    transition: transform 0.3s ease;
+
+}
+.about-list:hover{
+    transform: translateY(-10px);
+
+}
+
+/* services */
+.services{
+    margin: 20px 0;
+    padding:  15px;
+    /* width: 100vw; */
+    /* height: 500px; */
+    background-color: var(--bgColor)
+    /* background-color: var(--secondaryColor); */
+}
+.service-container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+.service-title{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: var(--primaryColor);
+}
+.service-card{
+    padding: 20px;
+    width: 30%;
+    height: 400px;
+    background-color:white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px grey;
+    opacity: 0.9;
+}
+.service-card:hover{
+    transform: scale(1.01);
+    opacity: 2;
+}
+.service-card .image img{
+    width: 100%;
+    max-height: 250px;
+    border-radius: 10px;
+    
+}
+.service-content{
+    margin: 20px 0;
+}
+
+@media (max-width:480px){
+    .eventlist{
+        width:50vw;
+    }
+    .about-body{
+        display:block
+    }
+    .about-content{
+        width: 100vw;
+     }
+     .slide-content{
+        
+        width: 100vw;
+        height: 250px;
+     }
+    .service-container{
+        display: block;
+        justify-content: center;
+    }
+    .about{
+        margin: 0;
+    }
+    .about-exp{
+        display: block;
+    }
+    .about-list{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .service-card{
+        width: 100%;
+    }
+    .slide-content{
+        display: block;
+        padding: 0;
+    }
+    .slider .slides img{
+        width: 300px;
+    }
+    .about-body{
+        max-width: 0;
+    }
+}
