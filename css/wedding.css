@@ -1,0 +1,175 @@
+:root{
+    --primaryColor:rgba(234,56,101,255);
+    --secondaryColor:#fdcbe2;
+    --lightColor:#f3dec9;
+    --bgColor:#e9ece1;
+    --pale:rgba(204,189,160,255);
+    --peachcolor:#efc477;
+    --skin:#ff8866;
+    --grey:#919d9b;
+}
+.main{
+    height:95vh
+}
+.main-body{ 
+     position: relative;
+    /* top: 90px; */
+    width: 100vw;
+    height: 90vh;
+    background-image: url(/assets/images/wedding3.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(10px);
+    opacity: 0.8;
+}
+.main-content{
+    position: relative;
+    bottom: 400px;
+    left: 10%;
+    display: flex;
+    /* gap:30px; */
+    font-size: 1.5rem;
+}
+.main-content span{
+    margin: 50px ;
+}
+
+/* wedding-section */
+
+.wedding{
+    width:100vw;
+    /* height: 500px; */
+    /* padding: 20px; */
+    background-color:var(--grey)
+   
+}
+
+.wedding-title1,.wedding-title2{
+    width:100vw;
+    height: 80px;
+   /* background-color: orange; */
+   font-size: 2rem;
+    position: relative;
+    /* text-align: center; */
+    
+    padding: 1.5rem;
+}
+.wedding-title1 span{
+    /* background-color:pink; */
+    position: absolute;
+    right: 15%;
+ 
+}
+.wedding-title2 span{
+    /* background-color:pink; */
+     position: absolute;
+    left: 15%;
+}
+.wedding-body{
+    width: 100vw;
+    height: 400px;
+    padding-top: 10px;
+    /* background-color: rgb(212, 18, 18); */
+    display: flex;
+    justify-content: space-evenly;
+}
+.wedding-block{
+    width: 40%;
+    height: 350px;
+    background-color:var(--bgColor);
+    /* border:1px solid black; */
+    border-radius: 15px;
+    box-shadow: 2px 2px 9px grey;
+    text-align: center;
+    
+}
+
+.wedding-image img{
+    margin:20px 0;
+    width: 80%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.wedding-content{
+    padding: 20px;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+   
+}
+.wedding-content h3+p{
+    margin: 10px 0;
+}
+.wedding-button{
+    width: 30%;
+    padding:10px;
+    position: relative;
+    left:30%;
+    margin: 2rem;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--primaryColor);
+}
+.wedding-button:hover{
+    color:black;
+    transform: scale(1.02);
+    /* background-color: var(--lightColor); */
+    transition: all 0.05s ease;
+}
+.slider{
+    width: 100vw;
+    /* height: 60vh; */
+    background-color: blueviolet;
+    display: flex;
+   
+    justify-content: space-around;
+    overflow-x: scroll;
+}
+.wedding-slider{
+    display:none;
+    position: relative;
+    transition: all 10s smooth;
+    scroll-behavior: smooth;
+}
+.slider::before{
+    content: "";
+    width: 20%;
+    height: 100%;
+    position:absolute;
+    background-image: linear-gradient(90deg,rgb(37, 37, 37), rgb(61, 55, 55),transparent);
+    left: -10px;
+    filter:blur(9px);
+    margin:0;
+}
+.slider::after{
+    content: "";
+    width: 20%;
+    height: 100%;
+    position:absolute;
+    background-image: linear-gradient(90deg,transparent,rgb(61, 55, 55),black );
+    right: -10px;
+    filter:blur(9px);
+    margin:0;
+}
+
+.slides img{
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+    margin: 20px 5px;
+}
+.icon {
+    position: absolute;
+    top:50%;
+    color: yellow;
+    font-size: 2rem;
+}
+#left{
+    left:0;
+    z-index: 99;
+}
+#right{
+    right: 0;
+}

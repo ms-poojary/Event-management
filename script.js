@@ -1,3 +1,5 @@
+
+// responsive
 const navbar=document.querySelector("[data-navbar]");
 const navbarlinks=document.querySelectorAll("[data-nav-link]")
 const menuToggleBtn=document.querySelector("[data-navbtn]");
@@ -13,6 +15,7 @@ for (let i=0;i<navbarlinks.length;i++){
     })
 }
 
+// events
 let events=document.getElementById('events');
 let eventlist=document.getElementById('eventlist');
 events.addEventListener("click",()=>{
@@ -20,7 +23,7 @@ events.addEventListener("click",()=>{
     eventlist.style.display=(eventlist.style.display=='none')?'block':'none';
 })
 let home=document.getElementsByClassName('home')[0];
-home.addEventListener('click',function(){
+home.addEventListener('click',()=>{
     eventlist.style.display='none';
 })
 
@@ -45,4 +48,18 @@ function slideshow(){
     dots[slideindex-1].className+=' active';
     console.log("slid show working")
     setTimeout(slideshow,1500)
+}
+
+// scroll by manual
+
+
+
+console.log("its js page to scroll33333");
+function displays(element,elements){
+    element=document.getElementById(element);
+    classElements=document.getElementsByClassName(elements);
+    for(let i=0;i<classElements.length;i++)
+    classElements[i].style.display='none';
+    console.log('its working')
+    element.style.display=(element.style.display==='none')?'block':'none';
 }

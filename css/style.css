@@ -16,7 +16,7 @@
 body{
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     scroll-behavior: smooth;
 }
 
@@ -127,6 +127,35 @@ ul,li{
     
     background-color:var(--secondaryColor);
     border-radius: 10px;
+}
+
+/* events */
+.eventlist{
+   
+    width: 20vw;
+    display: none;
+    position:fixed;
+    z-index: 11;
+    top: 15%;
+    left: 55%;
+    background-color:#efc57780;
+    color: var(--bgColor);
+    border-radius: 10px;
+   
+}
+.event{
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    
+}
+.event:not(:nth-child(3)){
+    border-block-end: 2px solid rgb(255, 255, 255);
+}
+.event:hover{
+    background-color: var(--primaryColor);
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgb(68, 63, 63);
 }
 
 /* footer */
