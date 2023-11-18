@@ -8,6 +8,19 @@
     --skin:#ff8866;
     --grey:#919d9b;
 }
+
+/* home icon */
+.home{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color:var(--secondaryColor);
+    right: 10px;
+    bottom: 10px;
+    z-index: 99;
+    padding: 10px;
+    border-radius: 50%;
+}
 .main{
     height:95vh
 }
@@ -41,7 +54,7 @@
     width:100vw;
     /* height: 500px; */
     /* padding: 20px; */
-    background-color:var(--grey)
+    /* background-color:var(--grey) */
    
 }
 
@@ -121,55 +134,190 @@
 .slider{
     width: 100vw;
     /* height: 60vh; */
-    background-color: blueviolet;
+    background-color: var(--bgColor);
     display: flex;
-   
+    scroll-behavior: smooth;
     justify-content: space-around;
-    overflow-x: scroll;
+    overflow-x:auto;
 }
 .wedding-slider{
     display:none;
     position: relative;
     transition: all 10s smooth;
-    scroll-behavior: smooth;
+   
+}
+
+.slider::-webkit-scrollbar{
+    -webkit-appearance: none;
+    height: 0;
 }
 .slider::before{
     content: "";
-    width: 20%;
-    height: 100%;
+    width: 10%;
+    height: 102%;
     position:absolute;
-    background-image: linear-gradient(90deg,rgb(37, 37, 37), rgb(61, 55, 55),transparent);
+    background-image: linear-gradient(90deg,rgb(63, 63, 63), rgb(61, 55, 55),transparent);
     left: -10px;
     filter:blur(9px);
     margin:0;
 }
 .slider::after{
     content: "";
-    width: 20%;
-    height: 100%;
+    width: 10%;
+    height: 102%;
     position:absolute;
-    background-image: linear-gradient(90deg,transparent,rgb(61, 55, 55),black );
+    background-image: linear-gradient(90deg,transparent,rgb(63, 63, 63),black );
     right: -10px;
-    filter:blur(9px);
+    filter:blur(7px);
     margin:0;
 }
 
 .slides img{
     width: 400px;
     height: 300px;
-    object-fit: contain;
+    object-fit: cover;
     margin: 20px 5px;
+    border-radius: 12px;
 }
 .icon {
     position: absolute;
-    top:50%;
-    color: yellow;
+    top:45%;
+    margin: 20px ;
+    color:var(--peachcolor);
     font-size: 2rem;
 }
+.icon:hover{
+    transform: scale(1.1);
+}
+
 #left{
-    left:0;
+    left:-10px;
     z-index: 99;
 }
 #right{
     right: 0;
+}
+
+/* venue block */
+
+.venue{
+    width: 100vw;
+    height: 420px;
+    /* background-color: yellow; */
+
+}
+.venue-block{
+    margin: 20px;
+    display: flex;
+    padding: 20px;
+
+}
+.venue-head{
+    width:40vw;
+    height: 40px;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--primaryColor);
+    /* background-color: brown; */
+}
+.venue-head img{
+    margin: 1.2rem;
+    width: 400px;
+    object-fit: cover;
+    
+}
+.venue-buttons{
+    width: 100%;
+    height: 45%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-around;
+}
+.venue-body{
+    width: 100%;
+    position: relative;
+    top:40px;
+    text-align: center;
+    /* background-color: blue; */
+    padding: 2rem;
+}
+.venue-btn{
+    margin-top: 1rem;
+    width: 30%;
+    height: 80px;
+    font-size: 2em;
+    border-radius: 12px;
+    background-color:var(--secondaryColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.venue-btn:hover{
+    background-color: #ff8866;
+}
+/* venue placesssss */
+.destination{
+    width: 100vw;
+    height: 620px;
+    display: flex;
+    /* padding: 20px 0; */
+    justify-content: space-evenly;
+    /* background-color: orange; */
+}
+.dest-left{
+    width: 40vw;
+}
+.dest-right{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.dest-right img{
+    margin-left: 20px;
+    width: 40vw;
+    object-fit: cover;
+    border-radius: 7px;
+}
+.dest{
+    width: 100%;
+    height: 110px;
+    margin-top: 10px;
+    background-color:var(--bgColor);
+    display: flex;
+    position: relative;
+    border-radius: 5px;
+    align-items: center;
+    padding-left: 2rem;
+}
+.dest img{
+    position: absolute;
+    right :15%;
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.dest i{
+    background-color:var(--secondaryColor);
+    padding: 10px;
+    position: absolute;
+    right: 20px;
+    border-radius: 50%;
+    border:1px solid black
+}
+.dest i:hover{
+    box-shadow:  1px 1px 20px rgb(255, 255, 150);
+}
+/* #indian{
+    display: none;
+}
+#international{
+    display: none;
+} */
+.destinations{
+    display: block
+}
+.close{
+   font-size: 2rem; 
+   padding-top: 20px;  
 }
