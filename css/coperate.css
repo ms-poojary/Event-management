@@ -1,0 +1,27 @@
+
+
+.main-body{
+   position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/assets/images/coperatebg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.cop-head{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    font-size: 2.2rem;
+}
+.cop-body{
+    display: flex;
+    justify-content: space-between;
+}
+.cop-content{
+    width: 50%;
+}
+.cop-image{
+    width: 40%;
+}

@@ -11,6 +11,9 @@
     <!-- font awesome icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    
+     <!-- animation -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- css styles -->
 
     <link rel="stylesheet" href="/css/style.css">
@@ -73,7 +76,7 @@
 
         
 
-       <div class="home-content">
+       <div class="home-content" data-aos="zoom-out" data-aos-delay="300" data-aos-duration="1000">
             <div class="head">Random texts</div>
             <div class="head">Other Random texts</div>
             <div class="subtext">somethinfg more aahsfhjslja;</div>
@@ -83,7 +86,7 @@
 
     <!-- about us -->
     <div class="about">
-        <div class="about-head">
+        <div class="about-head"> 
             WE are greatful for your cellebration
         </div>
         <div class="about-body">
@@ -94,7 +97,7 @@
                 Deserunt necessitatibus, magni laboriosam molestiae quam totam. Nostrum perspiciatis, placeat est quasi nesciunt quidem fugiat et qui facere, repellat praesentium accusamus sint cumque quisquam excepturi corrupti voluptas! Id, distinctio ipsum.
                 Obcaecati inventore reprehenderit excepturi nemo vitae possimus nulla magni veniam harum, molestiae minus, ducimus non praesentium temporibus qui omnis. Eveniet, quisquam corrupti dicta eligendi incidunt iste facere ea beatae modi?</p>
             </div>
-            <div class="slide-content">
+            <div class="slide-content" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
                 <div class="slider">
                     <div class="slides">
                         <img src="/assets/images/slide1.avif" alt="">
@@ -144,7 +147,7 @@
     <div class="services">
         <div class="service-title"><h2>Our Services</h2></div>
         <div class="service-container">
-            <div class="service-card">
+            <div class="service-card"data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                 <div class="image">
                  <img src="https://images.pexels.com/photos/169211/pexels-photo-169211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                 </div>
@@ -153,7 +156,7 @@
                 <p>The Wedding is a once-in-lifetime event and everyone wants a ravishing venue for that moment.</p>
             </div>
             </div>
-            <div class="service-card">
+            <div class="service-card"data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                 <div class="image">
                     <img src="https://images.pexels.com/photos/1045541/pexels-photo-1045541.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
                 </div>
@@ -162,7 +165,7 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae repellat, quas explicabo </p>
                 </div>
             </div>
-            <div class="service-card">
+            <div class="service-card"data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                 <div class="image">
                     <img src="https://images.pexels.com/photos/6479559/pexels-photo-6479559.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
                 </div>
@@ -173,7 +176,7 @@
             </div>
         </div>
         <div class="service-container">
-            <div class="service-card">
+            <div class="service-card"data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                 <div class="image">
                     <img src="https://images.pexels.com/photos/358010/pexels-photo-358010.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
                 </div>
@@ -182,7 +185,7 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae repellat, quas explicabo </p>
                 </div>
             </div>
-            <div class="service-card">
+            <div class="service-card"data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                 <div class="image">
                     <img src="https://images.pexels.com/photos/13461082/pexels-photo-13461082.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
                 </div>
@@ -191,7 +194,7 @@
                     <p>loreorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eos cupiditate </p>
                 </div>
             </div>
-            <div class="service-card">
+            <div class="service-card"data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                 <div class="image">
                     <img src="https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
                 </div>
@@ -258,6 +261,11 @@
         <p>All rights are reserved</p>
     </div>
 </footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+        AOS.init();
+      </script>
     <script src="script.js"></script>
     <script>slideshow();</script>
 </body>
