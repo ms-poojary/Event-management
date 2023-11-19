@@ -54,34 +54,3 @@ function slideshow(){
 
 
 
-console.log("its js page to scroll33333");
-function displays(element,elements){
-    classElements=document.getElementsByClassName(elements);
-    for(let i=0;i<classElements.length;i++)
-    classElements[i].style.display='none';
-
-    idelement=document.getElementById(element);
-    
-    console.log('its working')
-    if(idelement.style.display=='none')
-    idelement.style.display='block';
-    else
-    idelement.style.display='none';
-// do this ;..
-    
-}
-
-// destination img
-function image(imageid,bigimage){
-    imageid=document.getElementById(imageid);
-    console.log("its half worling")
-    bigImage=document.getElementById(bigimage);
-    bigImage.src=imageid.src;
-    console.log("full working")
-}
-// closing
-function closing(dest){
-    destination=document.getElementById(dest);
-    destination.style.display='none';
-    console.log('npt woerijfdjla')
-}

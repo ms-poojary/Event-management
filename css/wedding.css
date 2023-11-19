@@ -202,9 +202,9 @@
 
 .venue{
     width: 100vw;
-    height: 420px;
-    /* background-color: yellow; */
-
+    /* height: 420px; */
+    background-color:palegoldenrod;
+    padding-bottom: 20px;
 }
 .venue-block{
     margin: 20px;
@@ -245,7 +245,7 @@
     margin-top: 1rem;
     width: 30%;
     height: 80px;
-    font-size: 2em;
+    font-size: 1.7em;
     border-radius: 12px;
     background-color:var(--secondaryColor);
     display: flex;
@@ -260,6 +260,7 @@
     width: 100vw;
     height: 620px;
     display: flex;
+    position: relative;
     /* padding: 20px 0; */
     justify-content: space-evenly;
     /* background-color: orange; */
@@ -308,16 +309,99 @@
 .dest i:hover{
     box-shadow:  1px 1px 20px rgb(255, 255, 150);
 }
-/* #indian{
-    display: none;
-}
-#international{
-    display: none;
-} */
 .destinations{
-    display: block
+    display: none;
 }
+ /*#indian{
+    display:block;
+}
+/* #international{
+    display: none;
+} */ 
+/* #indian,#international{
+    display:block;
+} */
 .close{
    font-size: 2rem; 
    padding-top: 20px;  
+}
+
+
+/* sssservice-section */
+.offers{
+    /* height: 900px; */
+    width: 100vw;
+    /* background-color:var(--bgColor); */
+    padding: 10px;
+}
+.offer-head{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0 50px ;
+    height: 250px;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.offer-body{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+.offer-container{
+    width:23%;
+    height: 320px;
+    padding: 20px;
+    position: relative;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 8px grey;
+}
+.circle{
+    
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
+.circle1{
+    background-color:lightpink;
+    position: relative;
+}
+.circle1 h5{
+    position: absolute;
+    left: 10%;
+    top:20%;
+    z-index: 1;
+    font-size: 1.4rem;
+}
+.circle1::after{
+    content: "";
+    display: inline-block;
+    width: 200px;
+    height:200px;
+    /* position: absolute; */
+    background-color: orange;
+    left: 0;
+    z-index: 0;
+    transform: scale(0);
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+.circle:hover::after{
+    transform: scale(1);
+}
+.circle2 {
+    background-color: yellow;
+    position: relative;
+    bottom: 45%;
+    left: 15%;
+}
+.circle2 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 2px 2px 8px black;
 }
