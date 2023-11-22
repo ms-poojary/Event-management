@@ -22,10 +22,10 @@ events.addEventListener("click",()=>{
     console.log("its working")
     eventlist.style.display=(eventlist.style.display=='none')?'block':'none';
 })
-// let home=document.getElementsByClassName('home')[0];
-// home.addEventListener('click',()=>{
-//     eventlist.style.display='none';
-// })
+let home=document.getElementsByClassName('home')[0];
+home.addEventListener('click',()=>{
+    eventlist.style.display='none';
+})
 
 // slideshow
 slideindex=0;
