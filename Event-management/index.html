@@ -1,0 +1,276 @@
+<!-- Code written by varshini -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event management</title>
+
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+     <!-- animation -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- css styles -->
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    
+    <header class="header">
+       <div class="container">
+            <div class="logo">
+                <h1>Festivity</h1>
+            </div>
+
+            <nav class="navbars" data-navbar>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="" class="nav-link" data-nav-link> About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link" data-nav-link> Services</a>
+                    </li>
+                    <li class="nav-item" id="events">
+                        <div class="nav-link" data-nav-link > Events
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link" data-nav-link> Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link" data-nav-link> Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-btn">
+                <button class="navbtn" aria-label="toggle icon" data-navbtn>
+                    <span class="line top"></span>
+                    <span class="line middle"></span>
+                    <span class="line bottom"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- events -->
+    <section>
+        <div class="eventlist" id="eventlist">
+            <div class="event"><a href="">Coperative Event</a></div>
+            <div class="event"><a href="wedding.html">Weddings</a></div>
+            <div class="event"><a href="">Private parties</a></div>
+        </div>
+    </section>
+    <!-- . -->
+
+    <!-- home  -->
+    <div class="home">
+
+        
+        let home=document.getElementsByClassName('home')[0];
+        home.addEventListener('click',()=>{
+            eventlist.style.display='none';
+        })
+       <div class="home-content" data-aos="zoom-out" data-aos-delay="300" data-aos-duration="1000">
+            <div class="head">Random texts</div>
+            <div class="head">Other Random texts</div>
+            <div class="subtext">somethinfg more aahsfhjslja;</div>
+
+       </div>
+    </div>
+
+    <!-- about us -->
+    <div class="about">
+        <div class="about-head"> 
+            WE are greatful for your cellebration
+        </div>
+        <div class="about-body">
+            <div class="about-content">
+                <h2>write something heading here</h2>
+                <h3>quotes here</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugiat laborum doloremque eveniet qui corporis commodi cupiditate ex, alias explicabo laudantium, perferendis mollitia reiciendis sapiente soluta accusamus quae a aliquam.
+                Deserunt necessitatibus, magni laboriosam molestiae quam totam. Nostrum perspiciatis, placeat est quasi nesciunt quidem fugiat et qui facere, repellat praesentium accusamus sint cumque quisquam excepturi corrupti voluptas! Id, distinctio ipsum.
+                Obcaecati inventore reprehenderit excepturi nemo vitae possimus nulla magni veniam harum, molestiae minus, ducimus non praesentium temporibus qui omnis. Eveniet, quisquam corrupti dicta eligendi incidunt iste facere ea beatae modi?</p>
+            </div>
+            <div class="slide-content" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
+                <div class="slider">
+                    <div class="slides">
+                        <img src="/assets/images/slide1.avif" alt="">
+                    </div>
+                    <div class="slides">
+                        <img src="/assets/images/slide2.avif" alt="">
+                    </div>
+                    <div class="slides">
+                        <img src="/assets/images/slide3.avif" alt="">
+                    </div>
+                    <div class="slides">
+                        <img src="/assets/images/slide4.avif" alt="">
+                    </div>
+                    <div class="slides">
+                        <img src="/assets/images/slide5.avif" alt="">
+                    </div>
+                </div>
+                <div class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+        <div class="about-exp">
+            <div class="about-list">
+                <h3>Expeience</h3>
+                <h4>800+</h4>
+            </div>
+            <div class="about-list">
+                <h3>Coperative Events</h3>
+                <h4>150+</h4>
+            </div>
+            <div class="about-list">
+                <h3>Weddings</h3>
+                <h4>500+</h4>
+            </div>
+            <div class="about-list">
+                <h3>Concerts</h3>
+                <h4>100+</h4>
+            </div>
+        </div>
+    </div>
+<!-- servicesss -->
+    <div class="services">
+        <div class="service-title"><h2>Our Services</h2></div>
+        <div class="service-container">
+            <div class="service-card"data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <div class="image">
+                 <img src="https://images.pexels.com/photos/169211/pexels-photo-169211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>
+                <div class="service-content">
+                    <h3>Venue</h3>
+                <p>The Wedding is a once-in-lifetime event and everyone wants a ravishing venue for that moment.</p>
+            </div>
+            </div>
+            <div class="service-card"data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <div class="image">
+                    <img src="https://images.pexels.com/photos/1045541/pexels-photo-1045541.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
+                </div>
+                <div class="service-content">
+                    <h3>Decoration</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae repellat, quas explicabo </p>
+                </div>
+            </div>
+            <div class="service-card"data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <div class="image">
+                    <img src="https://images.pexels.com/photos/6479559/pexels-photo-6479559.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
+                </div>
+                <div class="service-content">
+                    <h3>Invitations</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae repellat, quas explicabo </p>
+                </div>
+            </div>
+        </div>
+        <div class="service-container">
+            <div class="service-card"data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <div class="image">
+                    <img src="https://images.pexels.com/photos/358010/pexels-photo-358010.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
+                </div>
+                <div class="service-content">
+                    <h3>Entertainement</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae repellat, quas explicabo </p>
+                </div>
+            </div>
+            <div class="service-card"data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <div class="image">
+                    <img src="https://images.pexels.com/photos/13461082/pexels-photo-13461082.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
+                </div>
+                <div class="service-content">
+                    <h3>Photography</h3>
+                    <p>loreorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eos cupiditate </p>
+                </div>
+            </div>
+            <div class="service-card"data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <div class="image">
+                    <img src="https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
+                </div>
+                <div class="service-content">
+                    <h3>Custom Food</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae repellat, quas explicabo </p>
+                </div>
+            </div>
+        </div>
+     </div>
+<!-- footer -->
+
+<footer>
+    <div class="footer">
+         <div class="footer-column">
+            <div class="links">
+                <h5>Links</h5>
+                <a href=""> home</a>
+                <a href=""> about</a>
+                <a href=""> service</a>
+                <a href=""> eventsss</a>
+                <a href=""> contact</a>
+            </div>
+         </div>
+         <div class="footer-column">
+            <div class="contact">
+                <h5>contact</h5>
+                <a href=""><i class="fa-brands fa-instagram"></i>
+                    <p>evento03_festive</p>
+                </a>
+                <a href=""><i class="fa-brands fa-youtube"></i>
+                    <p>the_evento</p>
+                </a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i>
+                    <p>+914675983625</p>
+                </a>
+                <a href=""><i class="fa-solid fa-envelope"></i>
+                    <p>evento_festivity@gmail.com</p>
+                </a>
+                <a href=""><i class="fa-brands fa-facebook"></i>
+                    <p>the_eventos</p>
+                </a>
+                <a href=""><i class="fa-brands fa-twitter"></i>
+                    <p>event_festive</p>
+                </a>
+            </div>
+         </div>
+         <div class="footer-column">
+            <div class="location">
+                <h5>location</h5>
+                <ul>
+                    <li>USA</li>
+                    <li>India</li>
+                    <li>Italy</li>
+                    <li>Arab</li>
+                    <li>Australia</li>
+                </ul>
+                <div class="image"><img src="/assets/images/map.jpg" alt=""></div> 
+            </div>
+        </div>
+       
+    </div>
+    <div class="footer-end">
+        <p>All rights are reserved</p>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+        AOS.init();
+      </script>
+    <script src="script.js"></script>
+    <script>slideshow();</script>
+</body>
+</html>
