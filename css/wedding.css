@@ -9,31 +9,44 @@
     --grey:#919d9b;
 } */
 
-:root{
+/* :root{
     --primarycolor:#9a1750;
-    /* --primaryColor:rgba(234,56,101,255); */
-    /* --secondaryColor:#fdcbe2; */
+    --primaryColor:rgba(234,56,101,255);
+    --secondaryColor:#fdcbe2;
     --secondaryColor: #Ee4c7c;
     --lightColor:#f3dec9;
-    /* --bgColor:#e9ece1; */
+    --bgColor:#e9ece1;
     --bgColor:#E3e2df;
     --pale:rgba(204,189,160,255);
     --peachcolor:#efc477;
     --maroon:#5d001e;
     --light:#E3afbc;
     
+} */
+
+:root{
+    --primarycolor:#fb4b7a;
+    --violet:#624763;
+    --rose:#c62e65;
+    --light:#f9b3d1;
+    --magenta:#ba1266;
+    --bgcolor:#F3E3E6;
 }
 /* home icon */
 .home{
     position: fixed;
     width: 40px;
     height: 40px;
-    background-color:var(--secondaryColor);
+    background-color:var(--violet);
     right: 10px;
     bottom: 10px;
     z-index: 99;
-    padding: 10px;
+    color: white;
+    padding: 0.6rem;
     border-radius: 50%;
+}
+.home:hover{
+    background-color: var(--magenta);
 }
 .main{
     height:95vh
@@ -47,8 +60,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    filter: blur(10px);
-    opacity: 0.8;
+    filter: blur(9px);
+    /* opacity: 0.7; */
 }
 .main-content{
     position: relative;
@@ -57,55 +70,72 @@
     display: flex;
     /* gap:30px; */
     font-size: 1.5rem;
-    color: white;
+    /* color: black; */
+    
     /* color: var(--primarycolor); */
+}
+.main-content h2{
+    color:var(--bgColor);
+    text-shadow: 1px 1px 20px var(--violet);
 }
 .main-content span{
     margin: 50px ;
 }
-
+.main-content h3{
+    color: var(--magenta);
+    text-shadow: 1px 1px 5px whitesmoke;
+}
 /* wedding-section */
 
-.wedding{
-    width:100vw;
+/* .wedding{
+    /* width:100vw; */
     /* height: 500px; */
     /* padding: 20px; */
-    background-color:var(--bgColor)
+    /* background-color:var(--light) */
    
-}
+/* }  */
 
 .wedding-title1,.wedding-title2{
     width:100vw;
     height: 80px;
    /* background-color: orange; */
    font-size: 2rem;
+   font-weight: bold;
     position: relative;
-    color: var(--maroon);
+   /* border:2px solid var(--violet); */
     /* text-align: center; */
     
-    padding: 1.5rem;
+    padding: 1rem;
 }
 .wedding-title1 span{
     /* background-color:pink; */
     position: absolute;
     right: 15%;
- 
+    color: var(--primarycolor);
 }
 .wedding-title2 span{
     /* background-color:pink; */
      position: absolute;
     left: 15%;
+    color: var(--primarycolor);
+}
+.line{
+    width: 330px;
+    height: 3px;
+    background-color:var(--violet);
+    position: absolute;
+    bottom: 20px;
 }
 .wedding-body{
     width: 100vw;
     height: 400px;
     padding-top: 10px;
-    /* background-color: rgb(212, 18, 18); */
+    /* background-color: var(--light); */
     display: flex;
     justify-content: space-evenly;
 }
 .wedding-block{
-    width: 40%;
+    width: 50%;
     height: 350px;
     /* background-color:var(--bgColor); */
     /* border:1px solid black; */
@@ -124,31 +154,44 @@
 }
 .wedding-content{
     padding: 20px;
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
     display: flex;
+    /* background-color: blueviolet; */
     flex-direction: column;
-    color: var(--primarycolor);
+    line-height: 2rem;
+    /* color: var(--primarycolor); */
    
 }
-.wedding-content h3+p{
-    margin: 10px 0;
+.wedding-content h3{
+    color: var(--violet);
+    
+}
+.wedding-content p{
+    margin: 20px 0;
 }
 .wedding-button{
     width: 30%;
     padding:10px;
     position: relative;
     left:30%;
+ 
+}
+/* buttons */
+.butn{
     margin: 2rem;
     border-radius: 10px;
     color: white;
-    background-color: var(--secondaryColor);
+    background-color: var(--rose);
+    cursor: pointer;
 }
-.wedding-button:hover{
-    color:black;
+.butn:hover{
+
     transform: scale(1.02);
-    background-color: var(--light);
+    background-color: var(--violet);
     transition: all 0.05s ease;
 }
+
+/* slider */
 .slider{
     width: 100vw;
     /* height: 60vh; */
@@ -174,9 +217,9 @@
     width: 10%;
     height: 102%;
     position:absolute;
-    background-image: linear-gradient(90deg,var(--bgColor),transparent);
+    background-image: linear-gradient(90deg,var(--bgColor),var(--bgColor),transparent);
     left: -10px;
-    filter:blur(9px);
+    filter:blur(10px);
     margin:0;
 }
 .slider::after{
@@ -184,7 +227,7 @@
     width: 10%;
     height: 102%;
     position:absolute;
-    background-image: linear-gradient(90deg,transparent,var(--bgColor));
+    background-image: linear-gradient(90deg,transparent,var(--bgColor),var(--bgColor));
     right: -10px;
     filter:blur(7px);
     margin:0;
@@ -199,10 +242,11 @@
 }
 .icon {
     position: absolute;
-    top:45%;
+    top:40%;
     margin: 20px ;
-    color:var(--peachcolor);
+    color:var(--rose);
     font-size: 2rem;
+    cursor: pointer;
 }
 .icon:hover{
     transform: scale(1.1);
@@ -235,7 +279,7 @@
     height: 40px;
     font-size: 1.3rem;
     text-align: center;
-    color: var(--primaryColor);
+    color: var(--primarycolor);
     /* background-color: brown; */
 }
 .venue-head img{
@@ -257,24 +301,20 @@
     top:40px;
     text-align: center;
     /* background-color: blue; */
-    padding: 2rem;
-   
+    line-height: 2rem;
+    color: var(--violet);
+    padding: 2rem;   
+}
+.venue-body h3{
+    margin-bottom: 1.5rem;
+    color: var(--rose);
 }
 .venue-btn{
     margin-top: 1rem;
     width: 25%;
-    height: 45px;
-    font-size: 1.2em;
-    color:var(--maroon) ;
-    border-radius: 12px;
-    color: white;
-    background-color:var(--light);
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.venue-btn:hover{
-   color: var(--maroon);
 }
 /* venue placesssss */
 .destination{
@@ -304,12 +344,17 @@
     width: 100%;
     height: 110px;
     margin-top: 10px;
-    background-color:var(--bgColor);
+    /* background-color:white; */
     display: flex;
     position: relative;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     align-items: center;
     padding-left: 2rem;
+    border: 2px solid var(--violet);
+}
+.dest span{
+    color: var(--violet);
+    font-weight: bold;
 }
 .dest img{
     position: absolute;
@@ -320,16 +365,17 @@
     border-radius: 5px;
 }
 .dest i{
-    background-color:var(--light);
+    background-color:var(--violet);
+    color: white;
     padding: 10px;
     position: absolute;
     right: 20px;
     border-radius: 50%;
+    cursor: pointer;
     /* border:1px solid black */
 }
 .dest i:hover{
-    /* box-shadow:  1px 1px 20px rgb(255, 255, 150);
-*/
+ background-color: var(--rose);
 transform: scale(1.1);
 }
 .destinations{
@@ -345,6 +391,7 @@ transform: scale(1.1);
     display:block;
 } */
 .close{
+    color: var(--violet);
    font-size: 2rem; 
    padding-top: 20px;  
 }
@@ -354,18 +401,26 @@ transform: scale(1.1);
 .offers{
     /* height: 900px; */
     width: 100vw;
-    background-color:var(--bgColor);
+    /* background-color:var(--bgColor); */
     padding: 10px;
 }
 .offer-head{
     text-align: center;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     padding: 0 50px ;
     height: 250px;
     /* background-color: green; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+.offer-head h3{
+    font-size: 2rem;
+    color: var(--primarycolor);
+}
+.headquotes{
+    line-height: 2rem;
+    /* color: var(--violet); */
 }
 .offer-body{
     display: flex;
@@ -377,9 +432,9 @@ transform: scale(1.1);
     height: 320px;
     padding: 20px;
     position: relative;
-    background-color: white;
+    background-color:whitesmoke;
     border-radius: 7px;
-    box-shadow: 0px 0px 8px grey;
+    box-shadow: 0px 0px 8px var(--violet);
 }
 .circle{
     
@@ -389,7 +444,7 @@ transform: scale(1.1);
     
 }
 .circle1{
-    background-color:var(--l);
+    background-color:var(--light);
     position: relative;
 }
 .circle1 h5{
@@ -397,7 +452,8 @@ transform: scale(1.1);
     left: 10%;
     top:20%;
     z-index: 1;
-    font-size: 1.4rem;
+    font-weight:550;
+    font-size: 1.3rem;
 }
 .circle1::after{
     content: "";
@@ -405,7 +461,7 @@ transform: scale(1.1);
     width: 200px;
     height:200px;
     /* position: absolute; */
-    background-color:var(--light);
+   
     left: 0;
     z-index: 0;
     transform: scale(0);
@@ -413,7 +469,9 @@ transform: scale(1.1);
     transition: transform 0.5s ease;
 }
 .circle:hover::after{
+   
     transform: scale(1);
+    background-color: var(--primarycolor);
 }
 .circle2 {
     background-color:var(--secondaryColor);

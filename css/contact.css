@@ -1,18 +1,27 @@
 
 
-:root{
+/* :root{
     --primarycolor:#9a1750;
-    /* --primaryColor:rgba(234,56,101,255); */
-    /* --secondaryColor:#fdcbe2; */
+    --primaryColor:rgba(234,56,101,255);
+    --secondaryColor:#fdcbe2;
     --secondaryColor: #Ee4c7c;
     --lightColor:#f3dec9;
-    /* --bgColor:#e9ece1; */
+    --bgColor:#e9ece1;
     --bgColor:#E3e2df;
     --pale:rgba(204,189,160,255);
     --peachcolor:#efc477;
     --maroon:#5d001e;
     --light:#E3afbc;
     
+} */
+
+:root{
+    --primarycolor:#fb4b7a;
+    --violet:#624763;
+    --rose:#c62e65;
+    --light:#f9b3d1;
+    --magenta:#ba1266;
+    --bgcolor:#F3E3E6;
 }
 /* home icon */
 .home{
