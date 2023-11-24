@@ -264,9 +264,9 @@
 
 .venue{
     width: 100vw;
-    /* height: 420px; */
     background-color:var(--bgColor);
     padding-bottom: 20px;
+    border :3px solid var(--violet)
 }
 .venue-block{
     margin: 20px;

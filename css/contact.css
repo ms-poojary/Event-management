@@ -28,12 +28,16 @@
     position: fixed;
     width: 40px;
     height: 40px;
-    background-color:var(--secondaryColor);
+    background-color:var(--violet);
     right: 10px;
     bottom: 10px;
     z-index: 99;
-    padding: 10px;
+    color: white;
+    padding: 0.6rem;
     border-radius: 50%;
+}
+.home:hover{
+    background-color: var(--magenta);
 }
 .main{
     position: relative;
@@ -54,14 +58,14 @@
     left:10%;
 }
 main .main-head{
-    /* background-color: #E3afbc; */
+    color: var(--primarycolor);
     font-size: 2rem;
     font-weight: 700;
     padding: 1rem 5rem;
 }
 .main-body{
     /* height: 400px; */
-    background-color:var(--lightColor);
+    
     display: flex;
     justify-content: space-around;
 
@@ -75,28 +79,40 @@ main .main-head{
     /* height: 80vh; */
     justify-content: space-around;
 }
-
+.contact-list h3{
+    color: var(--violet);
+}
 .contact-list p{
     margin-top: 1.5rem;
     margin-bottom: 4rem;
+    font-size: medium;
     /* position: relative;
     left: 3rem; */
 }
+.contact-list{
+    margin: 20px 0;
+}
 .contact-list span{
     display: flex;
-    gap: 30px;
+    gap: 40px;
 }
-.contact-list img{
+
+.image img{
     width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: top;
+}
+.image h6{
+    position: relative;
+    left :30%
 }
 .form{
     width: 40%;
     /* height: 80vh; */
     /* background-color: yellow; */
-    padding: 1rem;
+   margin: 5% 0;
 }
 .form input,textarea{
     width: 90%;
@@ -110,3 +126,47 @@ main .main-head{
     margin:1rem;
     border-radius: 13px;
 }
+/* submit button */
+.butn{
+    margin: 2rem;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--rose);
+   
+}
+.butn:hover{
+
+    transform: scale(1.02);
+    background-color: var(--violet);
+    transition: all 0.05s ease;
+}
+
+section h2{
+    color: var(--primarycolor);
+    margin: 1rem 2rem;
+}
+.reviews{
+    display: flex;
+    justify-content: space-around;
+}
+.icon{
+    display: flex;
+    gap: 10px;
+    color: gold;
+}
+.customers{
+    width: 30%;
+    height: 55vh;
+    padding: 10px;
+    box-shadow: 1px 1px 3px var(--violet);
+}
+.review p{
+    font-size: medium;
+    margin-top:10px;
+}
+.customers img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
