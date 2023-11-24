@@ -1,4 +1,29 @@
+:root{
+    --primarycolor:#9a1750;
+    /* --primaryColor:rgba(234,56,101,255); */
+    /* --secondaryColor:#fdcbe2; */
+    --secondaryColor: #Ee4c7c;
+    --lightColor:#f3dec9;
+    /* --bgColor:#e9ece1; */
+    --bgColor:#E3e2df;
+    --pale:rgba(204,189,160,255);
+    --peachcolor:#efc477;
+    --maroon:#5d001e;
+    
+}
 
+/* home icon */
+.home{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color:var(--secondaryColor);
+    right: 10px;
+    bottom: 10px;
+    z-index: 99;
+    padding: 10px;
+    border-radius: 50%;
+}
 
 .main-body{
    position: relative;
@@ -20,14 +45,15 @@
 .cop-head{
     position: absolute;
     top: 45%;
-    left: 30%;
+    left: 35%;
     font-size: 2.2rem;
 }
 .cop-body{
     /* display: flex;
     flex-direction: column;
     justify-content: space-around; */
-    background-color: red;
+   
+    /* background-color:var(--bgColor); */
     /* height: 120vh; */
     text-align: center;
     margin: 30px;
@@ -35,7 +61,7 @@
 }
 .cop-content p{
     /* width: 70vw; */
-   background-color: orangered;
+   /* background-color:var(--primarycolor); */
    padding: 2rem;
 }
 .cop-content h2{
@@ -43,14 +69,16 @@
     height: 10vh;
     font-size: 1.8rem;
     text-align: center;
-    background-color: blanchedalmond;
+    color: #5d001e;
+    background-color: var(--lightColor);
+    /* background-color: blanchedalmond; */
     padding: 1rem;
 }
 
 .cop-images{
     display: flex;
    justify-content:space-evenly;
-    background-color: yellow;
+    /* background-color: var(--bgColor); */
     /* padding: 20px 10vw  */
 }
 .cop-images img{
@@ -64,21 +92,39 @@
     text-align: center;
 }
 .social-head{
+    background-color: var(--bgColor);
+    color: var(--maroon);
+    padding: 20px;
+}
+.social-body{
     
+    height: 80vh;
     padding: 20px;
     font-size: 1.5m;
     text-align: center;
-    background-color: green;
+    color: white;
+    background-image: url(/assets/images/dance.avif);
+    /* background-color: green; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center ;
 }
+
 .bigimage{
-    background-color: pink;
+  
+  display: flex; 
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+   /* background-color: pink; */
     /* width:30vw; */
+    margin-top: 20pt;
+    padding: 30px;
    
 }
 .bigimage img{
-    width: 40vw;
-    height: 50vh;
-    object-fit: cover;
+    /* width: 40vw; */
+    height: 40vh;
+    object-fit: contain;
 }
 
 .list{
