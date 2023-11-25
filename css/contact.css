@@ -1,20 +1,4 @@
 
-
-/* :root{
-    --primarycolor:#9a1750;
-    --primaryColor:rgba(234,56,101,255);
-    --secondaryColor:#fdcbe2;
-    --secondaryColor: #Ee4c7c;
-    --lightColor:#f3dec9;
-    --bgColor:#e9ece1;
-    --bgColor:#E3e2df;
-    --pale:rgba(204,189,160,255);
-    --peachcolor:#efc477;
-    --maroon:#5d001e;
-    --light:#E3afbc;
-    
-} */
-
 :root{
     --primarycolor:#fb4b7a;
     --violet:#624763;
@@ -23,7 +7,8 @@
     --magenta:#ba1266;
     --bgcolor:#F3E3E6;
 }
-/* home icon */
+
+/* fixed home icon */
 .home{
     position: fixed;
     width: 40px;
@@ -39,16 +24,16 @@
 .home:hover{
     background-color: var(--magenta);
 }
+
+/* main body */
 .main{
     position: relative;
 }
-/* main */
 .main img{
     width: 100vw;
     object-fit: cover;
     height: 90vh;
     object-position:top;
-
 }
 .main h1{
     position: absolute;
@@ -64,19 +49,16 @@ main .main-head{
     padding: 1rem 5rem;
 }
 .main-body{
-    /* height: 400px; */
-    
     display: flex;
     justify-content: space-around;
-
 }
+
+/* contact section */
 .contacts{
     width: 45vw;
-    /* background-color: orange; */
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    /* height: 80vh; */
     justify-content: space-around;
 }
 .contact-list h3{
@@ -86,8 +68,6 @@ main .main-head{
     margin-top: 1.5rem;
     margin-bottom: 4rem;
     font-size: medium;
-    /* position: relative;
-    left: 3rem; */
 }
 .contact-list{
     margin: 20px 0;
@@ -96,7 +76,6 @@ main .main-head{
     display: flex;
     gap: 40px;
 }
-
 .image img{
     width: 200px;
     height: 200px;
@@ -108,17 +87,16 @@ main .main-head{
     position: relative;
     left :30%
 }
+
+/* forms */
 .form{
     width: 40%;
-    /* height: 80vh; */
-    /* background-color: yellow; */
-   margin: 5% 0;
+    margin: 5% 0;
 }
 .form input,textarea{
     width: 90%;
     padding: 1.1rem;
     margin: 1rem;
-   
 }
 .form button{
     width: 20%;
@@ -132,15 +110,13 @@ main .main-head{
     border-radius: 10px;
     color: white;
     background-color: var(--rose);
-   
 }
 .butn:hover{
-
     transform: scale(1.02);
     background-color: var(--violet);
     transition: all 0.05s ease;
 }
-
+/* review section */
 section h2{
     color: var(--primarycolor);
     margin: 1rem 2rem;
@@ -170,3 +146,24 @@ section h2{
     object-fit: contain;
 }
 
+/* responsive for mobile  */
+@media (max-width:480px){
+    .main-body{
+        display: block;
+    }
+    .contacts{
+        width: 100vw;
+    }
+    .contact-list span{
+        flex-wrap: wrap;
+    }
+    .form{
+        width: 100vw;
+    }
+    .reviews{
+        display: block;
+    }
+    .customers{
+        width: 100vw;
+    }
+}

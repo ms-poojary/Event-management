@@ -1,28 +1,3 @@
-/* :root{
-    --primaryColor:rgba(234,56,101,255);
-    --secondaryColor:#fdcbe2;
-    --lightColor:#f3dec9;
-    --bgColor:#e9ece1;
-    --pale:rgba(204,189,160,255);
-    --peachcolor:#efc477;
-    --skin:#ff8866;
-    --grey:#919d9b;
-} */
-
-/* :root{
-    --primarycolor:#9a1750;
-    --primaryColor:rgba(234,56,101,255);
-    --secondaryColor:#fdcbe2;
-    --secondaryColor: #Ee4c7c;
-    --lightColor:#f3dec9;
-    --bgColor:#e9ece1;
-    --bgColor:#E3e2df;
-    --pale:rgba(204,189,160,255);
-    --peachcolor:#efc477;
-    --maroon:#5d001e;
-    --light:#E3afbc;
-    
-} */
 
 :root{
     --primarycolor:#fb4b7a;
@@ -32,7 +7,8 @@
     --magenta:#ba1266;
     --bgcolor:#F3E3E6;
 }
-/* home icon */
+
+/* fixed home icon */
 .home{
     position: fixed;
     width: 40px;
@@ -48,12 +24,13 @@
 .home:hover{
     background-color: var(--magenta);
 }
+
+/* main heading */
 .main{
     height:95vh
 }
 .main-body{ 
      position: relative;
-    /* top: 90px; */
     width: 100vw;
     height: 90vh;
     background-image: url(/assets/images/wedding3.avif);
@@ -61,18 +38,13 @@
     background-repeat: no-repeat;
     background-position: center;
     filter: blur(9px);
-    /* opacity: 0.7; */
 }
 .main-content{
     position: relative;
     bottom: 400px;
     left: 10%;
     display: flex;
-    /* gap:30px; */
     font-size: 1.5rem;
-    /* color: black; */
-    
-    /* color: var(--primarycolor); */
 }
 .main-content h2{
     color:var(--bgColor);
@@ -85,40 +57,27 @@
     color: var(--magenta);
     text-shadow: 1px 1px 5px whitesmoke;
 }
+
 /* wedding-section */
-
-/* .wedding{
-    /* width:100vw; */
-    /* height: 500px; */
-    /* padding: 20px; */
-    /* background-color:var(--light) */
-   
-/* }  */
-
 .wedding-title1,.wedding-title2{
     width:100vw;
     height: 80px;
-   /* background-color: orange; */
    font-size: 2rem;
    font-weight: bold;
     position: relative;
-   /* border:2px solid var(--violet); */
-    /* text-align: center; */
-    
     padding: 1rem;
 }
 .wedding-title1 span{
-    /* background-color:pink; */
     position: absolute;
     right: 15%;
     color: var(--primarycolor);
 }
 .wedding-title2 span{
-    /* background-color:pink; */
-     position: absolute;
+    position: absolute;
     left: 15%;
     color: var(--primarycolor);
 }
+/* underline for title */
 .line{
     width: 330px;
     height: 3px;
@@ -128,23 +87,15 @@
 }
 .wedding-body{
     width: 100vw;
-    height: 400px;
     padding-top: 10px;
-    /* background-color: var(--light); */
     display: flex;
     justify-content: space-evenly;
 }
 .wedding-block{
     width: 50%;
-    height: 350px;
-    /* background-color:var(--bgColor); */
-    /* border:1px solid black; */
     border-radius: 15px;
-    /* box-shadow: 2px 2px 9px grey; */
     text-align: center;
-    
 }
-
 .wedding-image img{
     margin:20px 0;
     width: 80%;
@@ -154,17 +105,12 @@
 }
 .wedding-content{
     padding: 20px;
-    /* font-size: 1.3rem; */
     display: flex;
-    /* background-color: blueviolet; */
     flex-direction: column;
     line-height: 2rem;
-    /* color: var(--primarycolor); */
-   
 }
 .wedding-content h3{
     color: var(--violet);
-    
 }
 .wedding-content p{
     margin: 20px 0;
@@ -174,9 +120,9 @@
     padding:10px;
     position: relative;
     left:30%;
- 
 }
-/* buttons */
+
+/*all buttons */
 .butn{
     margin: 2rem;
     border-radius: 10px;
@@ -185,7 +131,6 @@
     cursor: pointer;
 }
 .butn:hover{
-
     transform: scale(1.02);
     background-color: var(--violet);
     transition: all 0.05s ease;
@@ -194,8 +139,6 @@
 /* slider */
 .slider{
     width: 100vw;
-    /* height: 60vh; */
-    /* background-color: var(--bgColor); */
     display: flex;
     scroll-behavior: smooth;
     justify-content: space-around;
@@ -205,9 +148,7 @@
     display:none;
     position: relative;
     transition: all 10s smooth;
-   
 }
-
 .slider::-webkit-scrollbar{
     -webkit-appearance: none;
     height: 0;
@@ -232,7 +173,6 @@
     filter:blur(7px);
     margin:0;
 }
-
 .slides img{
     width: 400px;
     height: 300px;
@@ -251,7 +191,6 @@
 .icon:hover{
     transform: scale(1.1);
 }
-
 #left{
     left:-10px;
     z-index: 99;
@@ -260,8 +199,7 @@
     right: 0;
 }
 
-/* venue block */
-
+/* venue styles */
 .venue{
     width: 100vw;
     background-color:var(--bgColor);
@@ -272,7 +210,6 @@
     margin: 20px;
     display: flex;
     padding: 20px;
-
 }
 .venue-head{
     width:40vw;
@@ -280,18 +217,15 @@
     font-size: 1.3rem;
     text-align: center;
     color: var(--primarycolor);
-    /* background-color: brown; */
 }
 .venue-head img{
     margin: 1.2rem;
     width: 400px;
     object-fit: cover;
-    
 }
 .venue-buttons{
     width: 100%;
     height: 45%;
-    /* background-color: green; */
     display: flex;
     justify-content: space-around;
 }
@@ -300,7 +234,6 @@
     position: relative;
     top:40px;
     text-align: center;
-    /* background-color: blue; */
     line-height: 2rem;
     color: var(--violet);
     padding: 2rem;   
@@ -316,15 +249,13 @@
     align-items: center;
     justify-content: center;
 }
-/* venue placesssss */
+
+/* venues displaying */
 .destination{
     width: 100vw;
-    height: 620px;
     display: flex;
     position: relative;
-    /* padding: 20px 0; */
     justify-content: space-evenly;
-    /* background-color: orange; */
 }
 .dest-left{
     width: 40vw;
@@ -344,10 +275,8 @@
     width: 100%;
     height: 110px;
     margin-top: 10px;
-    /* background-color:white; */
     display: flex;
     position: relative;
-    /* border-radius: 5px; */
     align-items: center;
     padding-left: 2rem;
     border: 2px solid var(--violet);
@@ -372,7 +301,6 @@
     right: 20px;
     border-radius: 50%;
     cursor: pointer;
-    /* border:1px solid black */
 }
 .dest i:hover{
  background-color: var(--rose);
@@ -381,15 +309,7 @@ transform: scale(1.1);
 .destinations{
     display: none;
 }
- /*#indian{
-    display:block;
-}
-/* #international{
-    display: none;
-} */ 
-/* #indian,#international{
-    display:block;
-} */
+/* closing butn */
 .close{
     color: var(--violet);
    font-size: 2rem; 
@@ -397,19 +317,14 @@ transform: scale(1.1);
 }
 
 
-/* sssservice-section */
+/* service-section */
 .offers{
-    /* height: 900px; */
     width: 100vw;
-    /* background-color:var(--bgColor); */
     padding: 10px;
 }
 .offer-head{
     text-align: center;
-    /* font-size: 1.5rem; */
     padding: 0 50px ;
-    height: 250px;
-    /* background-color: green; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -420,7 +335,6 @@ transform: scale(1.1);
 }
 .headquotes{
     line-height: 2rem;
-    /* color: var(--violet); */
 }
 .offer-body{
     display: flex;
@@ -437,11 +351,9 @@ transform: scale(1.1);
     box-shadow: 0px 0px 8px var(--violet);
 }
 .circle{
-    
     width: 200px;
     height: 200px;
-    border-radius: 50%;
-    
+    border-radius: 50%; 
 }
 .circle1{
     background-color:var(--light);
@@ -460,8 +372,6 @@ transform: scale(1.1);
     display: inline-block;
     width: 200px;
     height:200px;
-    /* position: absolute; */
-   
     left: 0;
     z-index: 0;
     transform: scale(0);
@@ -469,7 +379,6 @@ transform: scale(1.1);
     transition: transform 0.5s ease;
 }
 .circle:hover::after{
-   
     transform: scale(1);
     background-color: var(--primarycolor);
 }
@@ -485,4 +394,54 @@ transform: scale(1.1);
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 2px 2px 8px black;
+}
+
+/* responsive for mobiles */
+@media (max-width:480px){
+   .main{
+        height: 120vh;
+    }
+    .main span{
+        margin: 0;
+    }
+    .wedding-body{
+        display:block;
+    }
+    .main-content img{
+        display: none;
+    }
+    .wedding-block{
+        width: 100vw;
+    }
+    .venue-head{
+        height: auto;
+    }
+    .venue-block{
+        display: block;
+        padding: 0;
+    }
+    .venue-btn{
+        width: auto;
+        padding: 1rem;
+    }
+    .destination{
+        display: block;
+    }
+    .dest-left{
+        width: 100vw;
+    }
+    .dest-right,.close{
+        display: none;
+    }
+    .offer-body{
+        display: block;
+    }
+    .offer-container{
+        width: 100vw;
+        margin-bottom: 10px;
+        padding:1rem 5rem;
+    }
+    .venue{
+        border: none;
+    }
 }

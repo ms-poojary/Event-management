@@ -19,7 +19,6 @@ for (let i=0;i<navbarlinks.length;i++){
 let events=document.getElementById('events');
 let eventlist=document.getElementById('eventlist');
 events.addEventListener("click",()=>{
-    console.log("its working")
     eventlist.style.display=(eventlist.style.display=='none')?'block':'none';
 })
 let home=document.getElementsByClassName('home')[0];
@@ -29,7 +28,6 @@ home.addEventListener('click',()=>{
 
 // slideshow
 slideindex=0;
-// slideshow();
 function slideshow(){
     let i;
     const slides=document.getElementsByClassName('slides');
@@ -50,7 +48,6 @@ function slideshow(){
     setTimeout(slideshow,1500)
 }
 
-// scroll by manual
 
 
 
