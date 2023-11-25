@@ -1,5 +1,54 @@
+
+:root{
+    --primaryColor:#fb4b7a;
+    --violet:#624763;
+    --rose:#c62e65;
+    --light:#f9b3d1;
+    --magenta:#ba1266;
+    --bgColor:#F3E3E6;
+}
+/* fixed home icon */
+.home{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color:var(--violet);
+    right: 10px;
+    bottom: 10px;
+    z-index: 99;
+    color: white;
+    padding: 0.6rem;
+    border-radius: 50%;
+}
+.home:hover{
+    background-color: var(--magenta);
+}
+
 .header .containers{
     padding: 10px;
     display: flex;
     align-items: center;
+}
+.container{
+    width: 70vw;
+}
+.carousel-caption{
+    background-color: var(--bgColor);
+    color: var(--primaryColor);
+}
+.gallery{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery-column{
+    width: 410px;
+}
+.gallery img{
+    margin: 5px ;
+    width: 400px;
+}
+.gallery img:hover{
+    opacity: 0.8;
 }
