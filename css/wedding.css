@@ -14,8 +14,8 @@
     width: 40px;
     height: 40px;
     background-color:var(--violet);
-    right: 10px;
-    bottom: 10px;
+    right: 1vw;
+    bottom: 1vh;
     z-index: 99;
     color: white;
     padding: 0.6rem;
@@ -40,6 +40,7 @@
     filter: blur(9px);
 }
 .main-content{
+    width: 80%;
     position: relative;
     bottom: 400px;
     left: 10%;
@@ -225,7 +226,7 @@
 }
 .venue-buttons{
     width: 100%;
-    height: 45%;
+    height: 40%;
     display: flex;
     justify-content: space-around;
 }
@@ -338,12 +339,14 @@ transform: scale(1.1);
 }
 .offer-body{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 30px 0;
 }
 .offer-container{
-    width:23%;
+    width:300px;
     height: 320px;
+    margin-bottom: 10px;
     padding: 20px;
     position: relative;
     background-color:whitesmoke;
@@ -396,33 +399,65 @@ transform: scale(1.1);
     box-shadow: 2px 2px 8px black;
 }
 
+
+/* responsivenesss */
+@media (max-width:1150px){
+    .main-content img{
+        width: 400px;
+        object-fit: contain;
+    }
+    .offer-body{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:1000px){
+  
+    .main-content img{
+        width: 370px;
+    }
+    .venue-buttons{
+        height: auto;
+    }
+    .venue-btn{
+        width: auto;
+        padding: 1rem;
+    }
+    .venue-block{
+        display: block;
+    }
+    .venue-head{
+        width: 100vw;
+        height: 300px;
+    }
+    .venue-body{
+        width: 100vw;
+    }
+    .venue{
+        border: none;
+    }
+}
+
 /* responsive for mobiles */
-@media (max-width:480px){
+@media (max-width:500px){
+    body{
+        font-size: 12px;
+    }
    .main{
         height: 120vh;
-    }
-    .main span{
-        margin: 0;
     }
     .wedding-body{
         display:block;
     }
+    
     .main-content img{
         display: none;
     }
     .wedding-block{
         width: 100vw;
     }
-    .venue-head{
-        height: auto;
-    }
-    .venue-block{
-        display: block;
-        padding: 0;
-    }
-    .venue-btn{
-        width: auto;
-        padding: 1rem;
+    .venue-head img{
+        width: 350px;
     }
     .destination{
         display: block;
@@ -433,15 +468,5 @@ transform: scale(1.1);
     .dest-right,.close{
         display: none;
     }
-    .offer-body{
-        display: block;
-    }
-    .offer-container{
-        width: 100vw;
-        margin-bottom: 10px;
-        padding:1rem 5rem;
-    }
-    .venue{
-        border: none;
-    }
+    
 }

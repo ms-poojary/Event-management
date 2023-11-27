@@ -157,6 +157,7 @@ ul,li{
 /* footer styles */
 footer{
     padding-top: 20px;
+    margin: 20px;
 }
 .footer{
     display: flex;
@@ -164,7 +165,7 @@ footer{
 }
 .footer-column{
     width:30%;
-    padding: 20px;
+    /* padding: 20px; */
 }
 .footer-column h5{
     font-size: 1.3rem;
@@ -207,9 +208,8 @@ footer{
     background-color: var(--light)
 }
 
-
-/* navigation bar for responsive */
-@media (max-width:480px){
+/* responsiveness */
+@media (max-width:1050px){
     .nav-list{
         display:none
     }
@@ -221,12 +221,13 @@ footer{
         top: 23%;
         left: 10%;
     }
+}
+@media (max-width:1000px){
     .footer{
         display: block
     }
     .footer-column{
         width:100%
     }
-    
 }
 
