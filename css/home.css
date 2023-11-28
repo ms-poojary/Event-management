@@ -108,7 +108,7 @@
     justify-content: space-around;
 }
 .about-list{
-    width:350px;
+    width:330px;
     background-color:var(--light);
     text-align: center;
     color: var(--violet);

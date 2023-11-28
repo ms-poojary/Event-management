@@ -157,7 +157,7 @@ ul,li{
 /* footer styles */
 footer{
     padding-top: 20px;
-    margin: 20px;
+    /* margin: 20px; */
 }
 .footer{
     display: flex;
@@ -202,7 +202,6 @@ footer{
     right:0;
 }
 .footer-end{
-    height: 50px;
     text-align: center;
     padding: 10px 0;
     background-color: var(--light)

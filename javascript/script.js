@@ -44,7 +44,6 @@ function slideshow(){
 
     slides[slideindex-1].style.display='block';
     dots[slideindex-1].className+=' active';
-    console.log("slid show working")
     setTimeout(slideshow,1500)
 }
 

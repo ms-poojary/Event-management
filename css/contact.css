@@ -132,7 +132,6 @@ section h2{
 }
 .customers{
     width: 30%;
-    height: 55vh;
     padding: 10px;
     box-shadow: 1px 1px 3px var(--violet);
 }
@@ -147,7 +146,7 @@ section h2{
 }
 
 /* responsive for mobile  */
-@media (max-width:480px){
+@media (max-width:720px){
     .main-body{
         display: block;
     }

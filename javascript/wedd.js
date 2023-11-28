@@ -1,7 +1,7 @@
 
+// scroll to left
 function scrolll(sliderid){
     const slider=document.getElementById(sliderid)
-    
     console.log("client",slider.clientWidth)
     if(slider.scrollLeft===0)
     {
@@ -10,23 +10,15 @@ function scrolll(sliderid){
     else{
     slider.scrollBy(-300 ,0);
     }
-    console.log("width",slider.scrollWidth)
-    console.log("left",slider.scrollLeft);
-    
 }
-// slider.scrollTo(330,0);
-// not working
+// scroll to right
 function scrollr(sliderid){
     const slider=document.getElementById(sliderid)
-    if(slider.scrollLeft===1806.3157958984375)
+    if(slider.scrollLeft>=(slider.scrollWidth-slider.clientWidth-1))
     slider.scrollTo(0,0)
     else{
     slider.scrollBy(300,0);
     }
-    console.log("r ",(slider.scrollWidth-slider.clientWidth));
-    console.log("leftscroll",slider.scrollLeft)
-    // console.log("width r",slider.scrollWidth);
-    // console.log("rughtt",slider.scrollLeft);
 }
 
 
