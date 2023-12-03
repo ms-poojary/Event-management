@@ -15,11 +15,14 @@
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
 }
-
+html
+{
+    scroll-behavior: smooth;
+}
 body{
     font-size: 18px;
     overflow-x: hidden;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     background-color: var(--bgColor);
 }
 
@@ -208,6 +211,11 @@ footer{
 }
 
 /* responsiveness */
+@media (max-width:1250px){
+    .nav-item{
+        font-size: 1.1rem;
+    }
+}
 @media (max-width:1050px){
     .nav-list{
         display:none

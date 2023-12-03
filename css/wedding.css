@@ -404,8 +404,9 @@ transform: scale(1.1);
 /* responsivenesss */
 @media (max-width:1150px){
     .main-content img{
-        width: 400px;
-        object-fit: contain;
+        width: 350px;
+        position: relative;
+        top: 50px;
     }
     .offer-body{
         flex-wrap: wrap;
@@ -413,9 +414,9 @@ transform: scale(1.1);
 }
 
 @media (max-width:1000px){
-  
+    
     .main-content img{
-        width: 370px;
+        display: none;
     }
     .venue-buttons{
         height: auto;
@@ -451,9 +452,6 @@ transform: scale(1.1);
         display:block;
     }
     
-    .main-content img{
-        display: none;
-    }
     .wedding-block{
         width: 100vw;
     }
